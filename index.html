@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>فاتح و الرفقة الصالحة</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,500|Dosis:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/fancybox.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      .card-img-top {
+        height: 250px;
+      }
+      .img-fluid {
+        height: 280px;
+        width: 100%;
+      }
+      .form-volunteer ul li {
+        list-style: none;
+        width: 300px;
+        border: rgb(250, 250, 250) 2px solid;
+        margin-top: 10px;
+        text-align: center;
+        border-radius: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .form-volunteer ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      .popup {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+
+    .popup-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .pip {
+      padding: 10px 20px;
+      background-color: #ff1100;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <img width="300px" src="media/imgs/gafa.jpg" alt="">
+        <h2>الخير يناديك</h2>
+        <p>تبرع من أجل توفير احتياجات الأسر المعوزة </p>
+        <h4 style="padding: 5px; border:  2px solid palevioletred; border-radius: 20px;"><a href="media/bank account.png" style="text-decoration: none; color: palevioletred;">حسابنا البنكي لتبرع</a>
+        </h4>
+        <button onclick="closePopup()" class="pip">تجاهل</button>
+      </div>
+    </div>
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="media/logo.png" alt="" width="70px"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> القائمة
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active" ><a href="index.html" class="nav-link">الرئيسي</a></li>
+          <li class="nav-item"><a href="gallery.html" class="nav-link">معرض الصور</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">حولنا</a></li>
+                  
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END nav -->
+  
+  <div class="block-31" style="position: relative;">
+    <div class="owl-carousel loop-block-31 ">
+      <div class="block-30 block-30-sm item" style="background-image: url('images/bg_1.jpg'); height: 100vh;" data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row align-items-center justify-content-center text-center">
+            <div class="col-md-7">
+              <h2 class="heading mb-4" style="font-size: 2em; font-weight: 900; color: palevioletred; line-height: 2;">مجموعة الجالية المغربية والعربية
+                للأعمال الخيرية والانسانية ببلجيكا</h2>
+                <h2  class="bank" style=" padding: 8px; border-radius: 10px; backdrop-filter: blur(15px); color: palevioletred; border: 3px solid palevioletred;"><a href="media/bank account.png" style="color:palevioletred;">حسابنا البنكي لتبرع </a></h2>
+              </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div class="site-section section-counter">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 pr-5" style="">
+          <div class="block-48">
+              <span class="block-48-text-1">عدد المبادرات التي قمنا بها</span>
+              <div class="block-48-counter ftco-number" data-number="20">0</div>
+              <span class="block-48-text-1 mb-4 d-block">في مختلف جهات المملكة</span>
+              <p class="mb-0"><a href="#" class="btn btn-white px-3 py-2" style="letter-spacing: 0px; color: white; border-radius: 4px; background-color: rgba(0, 132, 255, 0.616);">اطلع على مبادراتنا عبر مجموعة الفيسبوك</a></p>
+            </div>
+        </div>
+        <div class="col-md-6 welcome-text" style="direction: rtl;">
+          <h2 class="display-4 mb-3">من نحن؟</h2>
+          <p class="lead">تأسست مجموعة الجالية المغربية والعربية للأعمال الخيرية والانسانية ببلجيكا سنة 2017 على يد السيد فاتح تختوخ, وذلك لتقديم المساعدات و الدعم سواء للأسر المعوزة أو المساهمة في بناء المساجد والمدارس وحفر الآبار وغيرها من المساهمات, وتستهدف المجموعة المغرب خاصة والعرب عامة كما, يمكنكم الاطلاع على مزيد من المعلومات عن طريق التواصل مع رئيس المجموعة السيد فاتح تختوخ عبر واتساب.</p>
+          <p class="mb-0"><a href="https://wa.me/+3249252" class="btn btn-primary px-3 py-2" style="letter-spacing: 0px; background-color: rgb(0, 73, 0);">الواتساب</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-section border-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mt-5" >
+          <div class="media block-6">
+            <div class="icon"><span class="ion-ios-bulb"></span></div>
+            <div class="media-body">
+              <h3 class="heading">لمحة</h3>
+              <p>ان التبرع للمؤسسات الخيرية هي نوع من انواع الوعي الاجتماعي هذا الوعي الذي لا زلنا نفتقده. وتذكر انه عند تبرعك ربما تفرج كرب أخك المسلم </p>
+            </div>
+          </div>     
+        </div>
+
+        <div class="col-md-4 mt-5">
+          <div class="media block-6">
+            <div class="icon"><span class="ion-ios-cash"></span></div>
+            <div class="media-body">
+              <h3 class="heading">جمع التبرعات</h3>
+              <p>لا تقلق تبرعاتك في ايد امنة, فعند تبرعك بمبلغ معين يقوم السيد فاتح تختوخ بالحرص ان تصل تبرعاتك الى ايد المحتجين مع التوثيق</p>
+            </div>
+          </div>  
+        </div>
+
+        <div class="col-md-4 mt-5">
+          <div class="media block-6">
+            <div class="icon"><span class="ion-ios-contacts"></span></div>
+            <div class="media-body">
+              <h3 class="heading">فريق عملنا</h3>
+              <p>ينقسم فريق العمل الى قسمين, القسم التسييري المكلف بجمع التبرعات وتوزيعها حسب الأولوية ويترأسه السيد فاتح تختوخ و القسم التنفيذي الذي يقف على توزيع تبرعات على من يستحق</p>
+            </div>
+          </div> 
+        </div>
+
+      </div>
+    </div>
+  </div> <!-- .site-section -->
+
+
+
+  
+
+  <div class="site-section fund-raisers bg-light">
+    <div class="container">
+      <div class="row mb-3 justify-content-center">
+        <div class="col-md-8 text-center">
+          <h2>أخر مبادراتنا</h2>
+          <p class="lead">سيتم عرض اخر مبادراتنا في الشهور الماضية اضغط على الأسهم لتمرير</p>
+          <p><a href="gallery.html" class="link-underline">الذهب الى معرض الصور</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+
+      <!-- <div class="row"> -->
+        
+        <div class="col-md-12 block-11" style="direction: ltr;">
+          <div class="nonloop-block-11 owl-carousel">
+
+            <div class="card fundraise-item">
+              <a href="#"><img class="card-img-top" src="media/imgs/1.jpg" alt="Image placeholder"></a>
+              <div class="card-body">
+                <h3 class="card-title"><a href="#">مبادرة حفر بئر باقليم تاوريرت</a></h3>
+                <p class="card-text">وقد تم حفر هذا البئر سنة 2022 في احدى المناطق النائية نواحي دبدو,حيث كلف حفر البئر وتزويده بالطاقة الشمسية مامجموعه 250.000 درهم واستفدت منه جميع سكان المنطقة. لمعرفة المزيد تواصل معنا عبر البريد الاكتروني</p>
+                <span class="donation-time mb-3 d-block">تاريخ انتهاء المبادرة: 15/02/2023</span>
+                <div class="progress custom-progress-success">
+                  <div class="progress-bar bg-primary" role="progressbar" style="width: 100%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span class="fund-raised d-block">تم جمع: 250000 درهم من اصل 250000</span>
+              </div>
+            </div>
+
+            
+            <div class="card fundraise-item">
+              <a href="#"><img class="card-img-top" src="media/imgs/2.jpg" alt="Image placeholder"></a>
+              <div class="card-body">
+                <h3 class="card-title"><a href="#">مبادرة عيد الأضحى 2023</a></h3>
+                <p class="card-text">يتم تننظيم هاته المبادرة كل سنة, حيث يتم جمع التبرعات من المحسنين, وذلك لشراء عيد الأضحى للأسر المعوزة وفي حالة المساهمة يتم تزويدكم بفيديو للعملية,وقد تم في هاته السنة أي سنة 2023 توفير أكثر من 148 أضحية ل148 أسرة معوزة. لمعرفة المزيد تواصل معنا عبر البريد الاكتروني</p>
+                <span class="donation-time mb-3 d-block">تاريخ انتهاء المبادرة: موسمية</span>
+                <div class="progress custom-progress-success">
+                  <div class="progress-bar bg-primary" role="progressbar" style="width: 100%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span class="fund-raised d-block">يتم جمع سنويا قرابة 50000 درهم</span>
+              </div>
+            </div>
+            
+            <div class="card fundraise-item">
+              <a href="#"><img class="card-img-top" src="media/imgs/3.jpg" alt="Image placeholder"></a>
+              <div class="card-body">
+                <h3 class="card-title"><a href="#">مبادرة سيارة الإسعاف</a></h3>
+                <p class="card-text">وقد استهدفت هاته المبادرة المجال القروي المحيط بمدينة أكليم، وذلك من أجل تعزيز وسائل النقل الخاصة بمجال الصحة و نقل المرضى على وجه السرعة إلى المستشفى، كم تمتلك هاته السيارة حساب مصرفي خاص بها من أجل تغطية مصاريفها من وقود وسائق و إصلاحات. لمعرفة المزيد تواصل معنا عبر البريد الاكتروني.</p>
+                <span class="donation-time mb-3 d-block">تاريخ انتهاء المبادرة: 20/10/2022</span>
+                <div class="progress custom-progress-success">
+                  <div class="progress-bar bg-primary" role="progressbar" style="width: 28%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span class="fund-raised d-block">كلفة 80000 درهم</span>
+              </div>
+            </div>
+
+            
+            <div class="card fundraise-item">
+              <a href="#"><img class="card-img-top" src="media/imgs/4.jpg" alt="Image placeholder"></a>
+              <div class="card-body">
+                <h3 class="card-title"><a href="#">مبادرات دورية </a></h3>
+                <p class="card-text">يتم تنظيم مبادرات دورية من حين إلى آخر من طرف المجموعة، نذكر على سبيل المثال لا الحصر المساعدة المادية للمرضى و ذوي الاحتياجات الخاصة، مساعدة الاسر المعوزة، اليتامى، تنظيم بعض الفعاليات، توزيع المستلزمات المدرسية وغيرها الكثير من المبادرات الأخرى . لمعرفة المزيد تواصل معنا عبر البريد الاكتروني</p>
+                <span class="donation-time mb-3 d-block">تاريخ انتهاء المبادرة: لا تزال مستمرة</span>
+                <div class="progress custom-progress-success">
+                  <div class="progress-bar bg-primary" role="progressbar" style="width: 70%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span class="fund-raised d-block">لم يتم تحديد المزانية</span>
+              </div>
+            </div>
+            
+            <div class="card fundraise-item">
+              <a href="#"><img class="card-img-top" src="media/imgs/5.jpg" alt="Image placeholder"></a>
+              <div class="card-body">
+                <h3 class="card-title"><a href="#">مبادرة بناء المساجد</a></h3>
+                <p class="card-text">تم تنظيم هاته المبادرة والتي أطلق عليها اسم "الصدقة الجارية" من أجل المساهمة بمبالغ مهمة في بناء عدة مساجد وهم 1.مسجد بوغريبة أكليم 2.مسجد تافوغالت 3.مسجد بركان بوشاقور 4.المدرسة القرآنية الشويحية بالاضافه الى بناء منزل لأحد الأخوات نواحي مدينة دبدو. ومازلت هاته المبادرة مستمرة, لمعرفة المزيد تواصل معنا عبر البريد الاكتروني </p>
+                <span class="donation-time mb-3 d-block">تاريخ انتهاء المبادرة: لا تزال مستمرة</span>
+                <div class="progress custom-progress-success">
+                  <div class="progress-bar bg-primary" role="progressbar" style="width: 70%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span class="fund-raised d-block">لم يتم تحديد المزانية</span>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      <!-- </div> -->
+    </div>
+  </div> <!-- .section -->
+
+
+  <div class="site-section fund-raisers">
+    <div class="container">
+      <div class="row mb-3 justify-content-center">
+        <div class="col-md-8 text-center">
+          <h2>أعضاء الفريق</h2>
+          <p class="lead">فريق عملنا الذي يقوده الشغف سيتم عرض جزء بسيط من الفريق فقط فيما لايزال الكثير من صناع الأمل يشتغلون في الخفاء</p>
+          <p class="mb-5"><a href="about.html#team" class="link-underline">رؤية المزيد</a></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-lg-3 mb-5">
+          <div class="person-donate text-center">
+            <img src="media/fateh.jpg" alt="Image placeholder" style="height: 200px;" class="img-fluid">
+            <div class="donate-info">
+              <h2>فاتح تختوخ</h2>
+              <span class="time d-block mb-3">المؤسس</span>
+              <span class="time d-block mb-3">مؤسس مجموعة الجالية المغربية والعربية ببلجيكا للأعمال الخيرية والانسانية ببلجيكا..والمسير العام لكل التدابير التي تقدمها المجموعة</span>
+            </div>
+          </div>    
+        </div>
+
+        <div class="col-md-6 col-lg-3 mb-5">
+          <div class="person-donate text-center">
+            <img src="media/youssef.jpg" alt="Image placeholder" style="height: 200px;" class="img-fluid">
+            <div class="donate-info">
+              <h2>يوسف تختوخ</h2>
+              <span class="time d-block mb-3">مسؤل</span>
+              <span class="time d-block mb-3">مسير ومسؤول عن الجهة الشرقية وكل مايتعلق بالتبرعات داخل وخارج المغرب</span>
+            </div>
+          </div>    
+        </div>
+
+        <div class="col-md-6 col-lg-3 mb-5">
+          <div class="person-donate text-center">
+            <img src="media/asmae (1).jpg" alt="Image placeholder" style="height: 200px;" class="img-fluid">
+            <div class="donate-info">
+              <h2>أسماء لزعر</h2>
+              <span class="time d-block mb-3">مسؤلة</span>
+              <span class="time d-block mb-3">مسيرة بمدينة أكليم ومشرفة على علاج البهاق وحالتهم النفسية لعلاج متوازن مع فاتح والرفقة الصالحة</span>
+            </div>
+          </div>    
+        </div>
+
+        <div class="col-md-6 col-lg-3 mb-5">
+          <div class="person-donate text-center">
+            <img src="media/youness.jpg" alt="Image placeholder" style="height: 200px;" class="img-fluid">
+            <div class="donate-info">
+              <h2>يونس ابو حفصة</h2>
+              <span class="time d-block mb-3">مسؤل</span>
+              <span class="time d-block mb-3">ابو حفصة مسير ورئيس صفحة الجالية المغربية للأعمال الخيرية ومسؤول عن التبرعات جهة اكادير</span>
+            </div>
+          </div>    
+        </div>
+
+      </div>
+    </div>
+  </div> <!-- .section -->
+
+  <div class="featured-section overlay-color-2" style="background-image: url('images/bg_3.jpg');">
+    
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6">
+          <img src="media/imgs/8.jpg" alt="Image placeholder" class="img-fluid">
+        </div>
+
+        <div class="col-md-6 pl-md-5">
+          <span class="featured-text d-block mb-3" style="letter-spacing: 0;">قصة نجاح</span>
+          <h2>الماء اساس الحياة... تزول الحياة مع زواله</h2>
+          <p class="mb-3">في أحد المناطق المنكوبة في نواحي مدينة دبدو. تبدء قصة سعيدة بحفر بئر و تزويده بطاقة الشمسية, الأمر الذ يبدو لك امر عاديا كان بنسبة لأهل المنطقة كأن الجنة فتحت أبوابها لهم. حيث لم يعودوا مجبرين على قطع مسافة كبيرة لتزود بالماء </p>
+          <span class="fund-raised d-block mb-5">تمكنا من جمع أكثر من 300000 درهم</span>
+
+          <p><a href="#" class="btn btn-success btn-hover-white py-3 px-5" style="border: none; background-color: palevioletred; letter-spacing: 0px;">شاهد الفيديو</a></p>
+        </div>
+        
+      </div>
+    </div>
+
+  </div> <!-- .featured-donate -->
+
+  <div class="site-section bg-light">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-12">
+          <h2>أخر الأخبار</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0">
+          <div class="post-entry">
+            <a href="#" class="mb-3 img-wrap">
+              <img src="media/imgs/gafa.jpg" alt="Image placeholder" class="img-fluid">
+            </a>
+            <h3><a href="#">قفة رمضان</a></h3>
+            <span class="date mb-4 d-block text-muted">1 مارس, 2024</span>
+            <p>تم الاعلان عن تنظيم قفة رمضان لسنة 2024 بقيادة السيد فاتح تختوخ وقدر بلغ اجمالي تبرعات الى 25000 درهم</p>
+            <p><a href="media/bank account.png" class="link-underline">حسابنا البنكي لتبرع</a></p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0">
+          <div class="post-entry">
+            <a href="#" class="mb-3 img-wrap">
+              <img src="media/imgs/11.jpg" alt="Image placeholder" class="img-fluid">
+            </a>
+            <h3><a href="#">المدرسة القرآنية</a></h3>
+            <span class="date mb-4 d-block text-muted">26 فبراير , 2024 </span>
+            <p>تم تبرع للمدرسة القرآنية بمبلغ 5000 درهم خلال شهر فبراير من لدى احد المحسنين</p>
+            <p><a href="media/bank account.png" class="link-underline">حسابنا البنكي لتبرع</a></p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0">
+          <div class="post-entry">
+            <a href="#" class="mb-3 img-wrap">
+              <img src="media/logo.png" alt="Image placeholder" class="img-fluid">
+            </a>
+            <h3><a href="#">اطلاق موقعنا الاكتروني</a></h3>
+            <span class="date mb-4 d-block text-muted">3 مارس, 2024</span>
+            <p>من اجل تطوير اعمالنا قمنا باطلاق موقع تعريفي لمجموعتنا وذلك من اجل مواكبة العصر</p>
+            <p><a href="#" class="link-underline">حسابنا البنكي لتبرع</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- .section -->
+  <div class="featured-section overlay-color-2" style="background-image: url('images/bg_2.jpg');">
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-5 mb-md-0">
+          <h4>تواصل معنا</h4>
+          <img src="media/imgs/10.jpg" alt="Image placeholder" class="img-fluid">
+        </div>
+
+        <div class="col-md-6 pl-md-5">
+
+          <div class="form-volunteer">
+            <ul>
+              <li  style="background-color: rgb(0, 110, 173);"><a href="https://www.facebook.com/fateh.vitiligo" target="_blank">Facebook</a></li>
+              <li  style="background-color: rgb(0, 112, 9);"><a href="https://wa.me/+32492528851" target="_blank">Whatsapp</a></li>
+              <li  style="background-color: rgb(173, 0, 0);"><a href="https://youtube.com/@fateh.vitiligo" target="_blank">Youtube</a></li>
+              <li  style="background-color: rgb(95, 0, 173);"><a href="mailto:bruxelles1999@live.be" target="_blank">Email</a></li>
+              <li  style="background-color: rgb(0, 0, 0);"><a href="https://www.tiktok.com/@fatahbruxelles" target="_blank">TikTok</a></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+  </div> <!-- .featured-donate -->
+ <!--footer-->
+ <footer class="footer" style="display: flex; justify-content: space-between;">
+  <div class="container  width: 100%;">
+    <div class="row mb-5">
+      <div class="col-md-6 col-lg-4">
+        <h3 class="heading-section">حولنا</h3>
+        <p class="lead" style="color: aliceblue;">تأسست مجموعة الجالية المغربية والعربية للأعمال الخيرية والانسانية ببلجيكا سنة 2017 على يد السيد فاتح تختوخ, وذلك لتقديم المساعدات و الدعم سواء للأسر المعوزة أو المساهمة في بناء المساجد والمدارس وحفر الآبار وغيرها من المساهمات, وتستهدف المجموعة المغرب خاصة والعرب عامة كما, يمكنكم الاطلاع على مزيد من المعلومات عن طريق التواصل مع رئيس المجموعة السيد فاتح تختوخ.</p>
+        <p class="mb-5">انثر الخير و  مضي</p>
+        <p><a href="#" class="link-underline">اقراء المزيد</a></p>
+      </div>
+      <div style="width: 300px;">
+        <h3 class="heading-section" style="margin-right: 20px;">صفحات الموقع</h3>
+        <ul style="list-style: none;">
+          <li><a href="index.html">الرئيسي</a></li>
+          <li><a href="gallery.html">معرض الصور</a></li>
+          <li><a href="blog.html"></a></li>
+          <li><a href="about.html">حولنا</a></li>
+        </ul>
+      </div>    
+      <div class="col-md-6 col-lg-4">
+        <div class="block-23">
+          <h3 class="heading-section">معلومات التواصل</h3>
+            <ul>
+              <li><span class="icon icon-map-marker"></span><span class="text">بروكسل, بلجيكا</span></li>
+              <li><a href="#"><span class="icon icon-phone"></span><span class="text" style="direction: ltr;">+32 492 52 88 51</span></a></li>
+              <li><a href="#"><span class="icon icon-envelope"></span><span class="text">bruxelles1999@live.be</span></a></li>
+            </ul>
+          </div>
+      </div>
+      
+      
+    </div>
+    <div class="row pt-5">
+      <div class="col-md-12 text-center">
+        <p>
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | made with <i class="ion-ios-heart text-danger" aria-hidden="true"></i> by <a href="https://github.com/NouamanLazar" target="_blank" >Nouaman Lazar</a>
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var popup = document.getElementById('popup');
+      popup.style.display = 'block';
+    });
+
+    function closePopup() {
+      var popup = document.getElementById('popup');
+      popup.style.display = 'none';
+    }
+  </script>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+
+  <script src="js/jquery.fancybox.min.js"></script>
+  
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
